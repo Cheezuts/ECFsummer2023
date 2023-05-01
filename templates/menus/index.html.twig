@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Horaires
+{% endblock %}
+{# {% include 'header.html.twig' %} #}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+
+
+	{% block content %}
+		{% include 'navbar.html.twig' %}
+
+		<div class="example-wrapper">
+			<h1>Menus !
+				<i class="fas fa-home"></i>
+				<i class="fas fa-home fa-inverse"></i>
+			</h1>
+
+
+			{% include 'footer.html.twig' %}
+
+		{% endblock %}
+
+
+	{% endblock %}
