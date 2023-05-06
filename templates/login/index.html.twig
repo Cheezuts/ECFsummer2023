@@ -2,7 +2,6 @@
 
 {% block title %}Login Controller
 {% endblock %}
-{# {% include 'header.html.twig' %} #}
 
 {% block head %}
 	{{ parent() }}
@@ -17,7 +16,7 @@
 
 		{% if error %}
 			<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
-			<p>C'est une erreur monsieur !</p>
+			<p style="color: red ;">C'est une erreur monsieur !</p>
 		{% endif %}
 
 		<form action="{{ path('app_login') }}" method="post">
@@ -29,7 +28,7 @@
 			type="password" id="password" name="_password">
 
 			{# If you want to control the URL the user is redirected to on success
-																			<input type="hidden" name="_target_path" value="/account"> #}
+																																											<input type="hidden" name="_target_path" value="/account"> #}
 
 			<button type="submit">login</button>
 		</form>

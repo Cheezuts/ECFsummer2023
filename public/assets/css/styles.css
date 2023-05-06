@@ -3,6 +3,11 @@
   color: red;
 }
 
+.error {
+  font-weight: bold;
+  color: red;
+}
+
 .navbar-toggler {
   width: 20px;
   height: 20px;
