@@ -3,6 +3,10 @@
   color: red;
 }
 
+.is-invalid {
+  color: red !important;
+}
+
 .error {
   font-weight: bold;
   color: red;
